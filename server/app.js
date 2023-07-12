@@ -15,10 +15,10 @@ app.use(morgan("dev"))
 app.use(cors())
 app.use(helmet())
 app.use(express.json())
-server.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://ericwithc-portfolio.vercel.app/');
-    next();
-});
+// server.use((req, res, next) => {
+//     res.header('Access-Control-Allow-Origin', 'https://ericwithc-portfolio.vercel.app/');
+//     next();
+// });
 
 app.use("/", routes)
 
