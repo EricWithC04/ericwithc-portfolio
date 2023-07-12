@@ -37,7 +37,7 @@ const Form = () => {
         const validated = await validate(email)
 
         if (validated) {
-            const sendedEmail = await fetch(`https://portfolio-contact-form-jn1o.onrender.com`, {
+            const sendedEmail = await fetch(`https://portfolio-contact-form-jn1o.onrender.com/email`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
