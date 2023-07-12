@@ -15,7 +15,7 @@ async function sendEmail(mail) {
       to: process.env.USER_EMAIL, // list of receivers
       subject: mail.subject, // Subject line
       text: mail.message, // plain text body
-      html: `<p>${mail.message}</p><br><p>${mail.emailAddress}</p>`, // html body
+      html: `<p>${mail.name}</p><br><p>${mail.message}</p><br><p>${mail.emailAddress}</p>`, // html body
     });
   
     console.log("Message sent: %s", info.messageId);
